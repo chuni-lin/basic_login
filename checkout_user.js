@@ -27,7 +27,7 @@ function checkoutUser(account) {
     }
   ]
 
-  const user = users.find(user => user.email === account.email & user.password === account.password)
+  const user = users.find(user => user.email === account.email && user.password === account.password)
   let response = {}
   if (user) {
     response = user
