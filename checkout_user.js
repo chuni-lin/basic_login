@@ -32,14 +32,7 @@ function checkoutUser(account) {
   if (user) {
     response = user
   }
-  return response
-  // let verifiedAccount = {}
-  // for (const user of users) {
-  //   if (user.email === account.email & user.password === account.password) {
-  //     verifiedAccount = user
-  //   }
-  // }
-  // return verifiedAccount
+  return response.firstName
 }
 
 module.exports = checkoutUser
